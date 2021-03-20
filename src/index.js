@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './scss/main.scss'
+import Appart from './views/Appart'
+import ErrorPage from './views/404'
+import Home from './views/Home'
+import Apropos from './views/Apropos'
+import Routes from './Routes';
 import reportWebVitals from './reportWebVitals';
-
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routes urls={{
+      appart:<Appart/>,
+      error: <ErrorPage/>,
+      home: <Home/>,
+      apropos:<Apropos/>
+    }}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

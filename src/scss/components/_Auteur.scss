@@ -1,0 +1,33 @@
+.auteur{
+    max-height: 64px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    display: flex;
+    &__imgBox{
+        position: relative;
+        overflow: hidden;
+        min-width: 64px;
+        max-width: 64px;
+        min-height: 64px;
+        max-height: 64px;
+        background: #C4C4C4;
+        border-radius: 64px;
+        margin-left: 10px;
+    }
+    &__img{
+        position: absolute;
+        top:0;
+        -o-object-fit: cover;
+           object-fit: cover;
+        width: 100%;
+    }
+    &__identity{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    &__prenom,&__nom{
+        width: 100%;
+    }
+}

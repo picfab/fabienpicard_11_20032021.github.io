@@ -1,0 +1,27 @@
+.noFound{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__title{
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 213px;
+        margin-top: 66px;
+        margin-bottom: 66px;
+    }
+    &__text{
+        font-size: 36px;
+        line-height: 51px;
+        margin-top: 0;
+        margin-bottom: 182px;
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 26px;
+        text-decoration: none;
+        color: $primary;
+        &:hover{
+            color: #673ab7;
+        }
+    }
+}

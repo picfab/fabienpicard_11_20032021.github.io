@@ -1,0 +1,32 @@
+.stars{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &__elt{
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        &::before{
+            position: absolute;
+            opacity: 0;
+            transition: all .5s ease;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            background: $primary;
+            -webkit-clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+                    clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+        }
+        &:hover::before,&.temp::before{
+                opacity: 1;
+            }
+        &.active svg{
+            fill: $primary;
+        }
+    }
+}
