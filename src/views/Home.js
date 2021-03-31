@@ -1,10 +1,9 @@
-import React from "react";
-import getdata from '../utils/getdata'
-import Card from '../Components/Card'
+import React from "react"
+import ListAppartement from '../Components/ListAppartement'
 import Openning from '../Components/Openning'
 import Menu from '../Components/Menu'
 import Footer from '../Components/Footer'
-
+import { siteUrl } from '../utils/dataApp'
 
 export default class Home extends React.Component {
     render() {
@@ -13,7 +12,7 @@ export default class Home extends React.Component {
             <main>
                 <header>
                     <Openning
-                        img='http://localhost:3000/header.jpg'
+                        img={`${siteUrl}/header.jpg`}
                         title="Chez vous, partout et ailleurs"
                     />
                 </header>
@@ -25,27 +24,3 @@ export default class Home extends React.Component {
 }
 
 
-export class ListAppartement extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { appartements: [] };
-    }
-    componentDidMount() {
-        getdata('appartements.json')
-            .then(appartements => {
-                console.log(appartements);
-                this.setState({ appartements })
-            })
-    }
-    render() {
-        return (
-            <ul className="listAppart">
-                {this.state.appartements.map((appart, i) =>
-                    <li key={i}>
-                        <Card appart={appart} />
-                    </li>
-                )}
-            </ul>
-        )
-    }
-}

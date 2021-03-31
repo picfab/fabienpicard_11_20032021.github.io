@@ -1,8 +1,9 @@
-import React from "react";
+import React from "react"
 import Accordion from '../Components/Accordion'
 import Openning from '../Components/Openning'
 import Menu from '../Components/Menu'
 import Footer from '../Components/Footer'
+import { siteUrl } from '../utils/dataApp'
 
 export default class Apropos extends React.Component {
 
@@ -17,7 +18,7 @@ export default class Apropos extends React.Component {
             <main className="Apropos">
                 <header>
                     <Openning
-                        img='http://localhost:3000/apropos.jpeg'
+                        img={`${siteUrl}/apropos.jpeg`}
                         keepHeight
                     />
                 </header>

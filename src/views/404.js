@@ -1,10 +1,14 @@
-import React from "react";
+import { Component } from "react"
 import Menu from '../Components/Menu'
 import Footer from '../Components/Footer'
 import {
     Link,
-} from "react-router-dom";
-export default class ErrorPage extends React.Component {
+} from "react-router-dom"
+
+/**
+ * The view of error 404
+ */
+export default class ErrorPage extends Component {
     render() {
         return <>
             <Menu />

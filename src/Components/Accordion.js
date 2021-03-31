@@ -1,25 +1,35 @@
-import React, { Component } from "react";
-import { arrowUp, arrowDown} from '../utils/picto'
+import React, { Component } from "react"
+import { arrowUp, arrowDown } from '../utils/picto'
 
+/**
+ * Accordion with title and content
+ */
 export default class Accordion extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             open: false
         }
     }
+
+    /**
+     * Set the state for open the accordion
+     * and calculate the height of component in DOM
+     * @param   {[type]}  e  [e description]
+     */
     openAccordion = (e) => {
         const accordionTitle = e.target.closest('.accordion__titleBox')
         const panel = accordionTitle.nextElementSibling
         if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
+            panel.style.maxHeight = null
         } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.maxHeight = panel.scrollHeight + "px"
         }
         this.setState({ open: !this.state.open })
     }
+
     render() {
-        const { description,title } = this.props
+        const { description, title } = this.props
         const { open } = this.state
         return (
             <div className='accordion'>

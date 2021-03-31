@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import { kasa } from '../utils/picto'
 
 export default class Footer extends Component {
