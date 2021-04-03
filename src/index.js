@@ -9,12 +9,13 @@ import Routes from './Routes'
 import reportWebVitals from './reportWebVitals'
 ReactDOM.render(
   <React.StrictMode>
-    <Routes urls={{
-      appart: <Appart />,
-      error: <ErrorPage />,
-      home: <Home />,
-      apropos: <Apropos />
-    }} />
+    <Routes
+      urls={{
+        appart: <Appart />,
+        error: <ErrorPage />,
+        home: <Home />,
+        apropos: <Apropos />
+      }} />
   </React.StrictMode>,
   document.getElementById('root')
 )
