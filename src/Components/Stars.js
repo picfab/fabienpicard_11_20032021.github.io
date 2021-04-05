@@ -76,7 +76,6 @@ export default class Stars extends Component {
                         {star}
                     </li>
                 )}
-
             </ul>
         )
     }
