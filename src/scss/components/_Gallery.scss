@@ -1,12 +1,15 @@
 .slideshow {
   position: relative;
-  height: 415px;
+  height: 255px;
   overflow: hidden;
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: 550px) {
+    height: 415px;
+  }
   &__img {
     position: absolute;
     opacity: 0;
@@ -28,6 +31,9 @@
     font-style: normal;
     text-align: center;
     color: #fff;
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
   &__nav {
     z-index: 1;
@@ -37,8 +43,11 @@
     justify-content: space-between;
     svg {
       cursor: pointer;
-      width: 50px;
+      width: 11px;
       color: #fff;
+      @media (min-width: 550px) {
+        width: 50px;
+      }
     }
   }
 }

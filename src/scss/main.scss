@@ -1,45 +1,49 @@
 // Vendors
-@import './vendors/reset';
+@import "./vendors/reset";
+@import "./vendors/fonts";
 // Variables
-@import './utils/variables';
+@import "./utils/variables";
 // Component
-@import './components/Accordion';
-@import './components/Menu';
-@import './components/Openning';
-@import './components/Card';
-@import './components/Gallery';
-@import './components/Tag';
-@import './components/Stars';
-@import './components/Auteur';
-@import './components/Footer';
+@import "./components/Accordion";
+@import "./components/Menu";
+@import "./components/Openning";
+@import "./components/Card";
+@import "./components/Gallery";
+@import "./components/Tag";
+@import "./components/Stars";
+@import "./components/Auteur";
+@import "./components/Footer";
 // Views
-@import './views/404';
-@import './views/Apropos';
-@import './views/Home';
-@import './views/Appart';
+@import "./views/404";
+@import "./views/Apropos";
+@import "./views/Home";
+@import "./views/Appart";
 
-html{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    color: $primary;
+html {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  color: $primary;
 }
 
-main{
-    max-width: 1240px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    @media (min-width:960px) {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+main {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 60vh;
+  @media (min-width: 960px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
-h1,h2{
-    font-weight: 400;
+h1,
+h2 {
+  font-weight: 400;
 }
 
-ul,p{
-    line-height: 26px;
+ul,
+p {
+  line-height: 26px;
 }

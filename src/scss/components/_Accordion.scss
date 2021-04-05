@@ -1,42 +1,51 @@
-.accordion{
-    &__container{
-        background: $secondary;
-        border-radius: 10px;
+.accordion {
+  &__container {
+    background: $secondary;
+    border-radius: 10px;
+  }
+  &__titleBox {
+    color: #fff;
+    background: $primary;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 6px 12px;
+    @media (min-width: 550px) {
+      padding: 13px 20px;
     }
-    &__titleBox{
-        color: #fff;
-        background: $primary;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 13px;
-        cursor: pointer;
+  }
+  &__title {
+    font-size: 13px;
+    @media (min-width: 550px) {
+      font-size: 18px;
     }
-    &__title{
-        font-size: 18px;
+  }
+  &__icon {
+    max-width: 26px;
+    svg {
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
     }
-    &__icon{
-        max-width: 26px;
-        svg{
-            -o-object-fit: cover;
-               object-fit: cover;
-            width: 100%;
-        }
+  }
+  &__content {
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    transition: all 0.5s ease;
+    font-size: 12px;
+    @media (min-width: 550px) {
+      font-size: 18px;
     }
-    &__content{
-        height: 100%;
-        max-height: 0;
-        overflow: hidden;
-        position: relative;
-        padding: 0;
-        font-size: 18px;
-        transition: all .5s ease;
-        &.open{
-            display: block;
-        }
+    &.open {
+      display: block;
     }
-    &__texte{
-        padding: 40px 20px 53px;
-    }
+  }
+  &__texte {
+    padding: 40px 20px 53px;
+  }
 }

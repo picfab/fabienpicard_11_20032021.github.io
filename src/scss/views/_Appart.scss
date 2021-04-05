@@ -1,82 +1,93 @@
 .appart {
-    .content{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 30px;
-    }
-    .accordion{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    @media (min-width:550px) {
-        .accordion{
-            width: 48%;
-        }
-    }
-}
-
-.headerAppart{
+  .content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    .slideshow{
-        width: 100%;
-        margin-bottom: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .accordion {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 550px) {
+    .accordion {
+      width: 48%;
     }
+  }
 }
 
-.titleBox{
+.headerAppart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .slideshow {
     width: 100%;
-    line-height: 51px;
-    text-align: left;
-    @media (min-width:550px) {
-        width: 60%;
-    }
+    margin-bottom: 30px;
+  }
+}
+
+.titleBox {
+  width: 100%;
+
+  text-align: left;
+  @media (min-width: 550px) {
+    width: 60%;
+  }
 }
 .title {
-    margin: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.67px;
+  margin-bottom: 10px;
+  @media (min-width: 550px) {
+    margin-bottom: 0;
     font-size: 36px;
-    font-weight: 400;
+    line-height: 51px;
+  }
 }
 
-.location{
+.location {
+  font-size: 14px;
+  line-height: 19.5px;
+  margin: 0;
+  font-weight: 400;
+  @media (min-width: 550px) {
     font-size: 18px;
     line-height: 26px;
-    margin: 0;
-    font-weight: 400;
+  }
 }
 
-.auteur{
-    display: flex;
-    justify-content: flex-end;
-    order: 5;
-    @media (min-width:550px) {
-        order: 3;
-        width: 40%;
-    }
+.auteur {
+  display: flex;
+  justify-content: flex-end;
+  order: 5;
+  @media (min-width: 550px) {
+    order: 3;
+    width: 40%;
+  }
 }
 
-.tags{
-    display: flex;
-    flex-wrap: wrap;
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100%;
+  @media (min-width: 550px) {
     margin-bottom: 30px;
     margin-top: 30px;
-    width: 100%;
-    @media (min-width:550px) {
-        width: auto;
-        order:4;
-    }
+    width: auto;
+    order: 4;
+  }
 }
 
-.stars{
-    @media (min-width:550px) {
-        order:5;
-    }
+.stars {
+  @media (min-width: 550px) {
+    order: 5;
+  }
 }
 
-
-
-.equipements{
-    list-style: none;
+.equipements {
+  list-style: none;
 }

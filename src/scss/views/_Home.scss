@@ -1,15 +1,16 @@
-.listAppart{
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
+.listAppart {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  @media (min-width: 550px) {
     gap: 50px;
-    @media (min-width:550px) {
-        background: $secondary;
-        border-radius: 25px;
-        padding: 50px;
-        grid-template-columns: 1fr 1fr;
-    }
-    @media (min-width:960px) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    background: $secondary;
+    border-radius: 25px;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 960px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
