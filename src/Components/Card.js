@@ -29,7 +29,7 @@ export default class Card extends Component {
         const { height, width } = this.state
         return (
             <Link className="card" to={{
-                pathname: `/fabienpicard_11_20032021.github.io/appartements/${id}`,
+                pathname: `/appartements/${id}`,
                 state: { ...appart }
             }}>
                 <svg className='card__mask' viewBox={`0 0 ${width} ${height}`} />
