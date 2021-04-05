@@ -11,10 +11,10 @@ export default class Routes extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route path="/appartements/:id" children={appart} />
-                    <Route exact path="/a-propos" children={apropos} />
-                    <Route exact path="/" children={home} />
-                    <Route path="/404" children={error} />
+                    <Route path="/fabienpicard_11_20032021.github.io/:id" children={appart} />
+                    <Route path="/fabienpicard_11_20032021.github.io/a-propos" children={apropos} />
+                    <Route exact path="/fabienpicard_11_20032021.github.io/" children={home} />
+                    <Route path="/fabienpicard_11_20032021.github.io/404" children={error} />
                     <Route children={error} />
                 </Switch>
             </Router>
