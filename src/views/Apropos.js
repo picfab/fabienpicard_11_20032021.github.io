@@ -18,7 +18,7 @@ export default class Apropos extends React.Component {
             <main className="Apropos">
                 <header>
                     <Openning
-                        img={`${siteUrl}/apropos.jpeg`}
+                        img={`${siteUrl}/img/apropos.jpeg`}
                         keepHeight
                     />
                 </header>
@@ -26,7 +26,6 @@ export default class Apropos extends React.Component {
                 <Accordion description={this.respect()} title="Respect" />
                 <Accordion description={this.service()} title="Service" />
                 <Accordion description={this.securite()} title="Sécurité" />
-
             </main>
             <Footer />
         </>

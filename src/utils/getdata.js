@@ -1,4 +1,4 @@
-import { siteUrl } from './dataApp'
+import { siteUrl, requestOptions } from './dataApp'
 
 /**
  * Return the data of request
@@ -7,10 +7,6 @@ import { siteUrl } from './dataApp'
  * @return  {mixed}   The answer
  */
 const getdata = (url) => new Promise((resolve, reject) => {
-    const requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-    }
     fetch(`${siteUrl}/${url}`,
         requestOptions)
         .then(response => response.json())

@@ -12,7 +12,7 @@ export default class Home extends React.Component {
             <main>
                 <header>
                     <Openning
-                        img={`${siteUrl}/header.jpg`}
+                        img={`${siteUrl}/img/header.jpg`}
                         title="Chez vous, partout et ailleurs"
                     />
                 </header>
