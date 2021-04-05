@@ -15,7 +15,7 @@ export default class ErrorPage extends Component {
             <main className="noFound">
                 <h1 className="noFound__title">404</h1>
                 <p className='noFound__text'>Oups! La page que vous demandez n'existe pas.</p>
-                <Link className="noFound__link" to="/">Retourner sur la page d’accueil</Link>
+                <Link className="noFound__link" to="/fabienpicard_11_20032021.github.io/">Retourner sur la page d’accueil</Link>
             </main>
             <Footer />
         </>
