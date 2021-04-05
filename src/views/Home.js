@@ -7,8 +7,6 @@ import { siteUrl } from '../utils/dataApp'
 
 export default class Home extends React.Component {
     render() {
-        console.log('header', siteUrl)
-
         return <>
             <Menu />
             <main>
