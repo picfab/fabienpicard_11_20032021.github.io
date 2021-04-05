@@ -9,7 +9,7 @@ export default class Routes extends Component {
     render() {
         const { appart, apropos, home, error } = this.props.urls
         return (
-            <Router baseName='/fabienpicard_11_20032021.github.io'>
+            <Router basename='/fabienpicard_11_20032021.github.io'>
                 <Switch>
                     <Route path="/appartements/:id" children={appart} />
                     <Route exact path="/a-propos" children={apropos} />
